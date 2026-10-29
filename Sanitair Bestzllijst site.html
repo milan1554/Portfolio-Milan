@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MM Studio | Sanitair & Offertes — Milan Meeuwens</title>
+<style>
+:root{--navy:#102a43;--blue:#087e8b;--pale:#eaf7f7;--line:#dbe5e9;--text:#1e3442;--green:#16806a;--mint:#b9f3e4;--gold:#f4bd50;--surface:#fff;--muted:#718592;--shadow:0 14px 36px rgba(16,42,67,.075)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 90% 0%,rgba(185,243,228,.32),transparent 34%),#f3f7f8;color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+header{position:relative;overflow:hidden;background:linear-gradient(120deg,#102a43 0%,#16465b 58%,#087e8b 100%);color:white;padding:30px max(18px,calc((100% - 1180px)/2));isolation:isolate}
+header:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #ffffff20;border-radius:50%;right:7%;top:-220px;box-shadow:0 0 0 32px #ffffff08,0 0 0 68px #ffffff06;z-index:-1}
+header:after{content:"";position:absolute;width:180px;height:180px;background:#b9f3e410;border-radius:50%;right:22%;bottom:-135px;z-index:-1}
+.brand-row{display:flex;align-items:center;gap:15px;max-width:1180px;margin:0 auto}
+.brand-mark{width:54px;height:54px;flex:0 0 54px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(145deg,#b9f3e4,#fff);color:#102a43;font-weight:950;font-size:17px;letter-spacing:-1px;box-shadow:0 8px 24px #061a2a40}
+.brand-copy{min-width:0}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2.4px;font-weight:800;color:#b9f3e4;margin-bottom:4px}
+header h1{margin:0;font-size:clamp(24px,3vw,34px);letter-spacing:-.9px;line-height:1.15}header p{margin:8px 0 0;color:#d7e9ed}
+.owner-chip{margin-left:auto;align-self:flex-start;white-space:nowrap;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;padding:9px 13px;font-size:12px;font-weight:750;color:#f2fffc;backdrop-filter:blur(8px)}
+main{max-width:1212px;margin:26px auto 48px;padding:0 16px}
+.workspace-intro{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:0 2px 18px}
+.workspace-intro h2{margin:0;font-size:22px;letter-spacing:-.5px;color:var(--navy)}
+.workspace-intro p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.workspace-tag{font-size:12px;font-weight:750;color:#087e8b;background:#dff6ef;padding:8px 12px;border-radius:999px;white-space:nowrap}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;padding:6px;border:1px solid #e2eaed;border-radius:15px;background:#eaf0f2}
+.tab{border:1px solid transparent;border-radius:10px;background:transparent;padding:11px 16px;cursor:pointer;font-weight:750;color:#536b78;transition:all .18s ease}
+.tab.active{background:white;color:var(--navy);border-color:#e0e9ed;box-shadow:0 3px 10px #102a4310}
+.tab:hover{color:var(--blue);background:#ffffffb8}
+.panel{background:var(--surface);border:1px solid #e0e9ed;border-radius:18px;padding:22px;margin-bottom:18px;box-shadow:var(--shadow)}
+h2{font-size:21px;letter-spacing:-.4px;margin:0 0 7px;color:var(--navy)}h3{font-size:16px;margin:0 0 10px;color:var(--navy)}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:end}.field{display:flex;flex-direction:column;gap:6px;min-width:150px;flex:1}.field.small{max-width:180px}
+label{font-size:12px;font-weight:800;color:#526976;letter-spacing:.15px}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid #d4e0e5;border-radius:10px;background:#fbfdfd;min-width:0;width:100%;color:var(--text);transition:border-color .18s,box-shadow .18s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#087e8b;box-shadow:0 0 0 3px #087e8b18;background:white}
+button{font:inherit;border:0;border-radius:10px;padding:11px 15px;background:var(--blue);color:white;cursor:pointer;font-weight:750;transition:transform .16s,filter .16s,box-shadow .16s}
+button:hover{filter:brightness(1.04);transform:translateY(-1px);box-shadow:0 5px 13px #102a4318}
+button:active{transform:translateY(0)}
+button.secondary{background:#eaf1f4;color:var(--navy)}button.danger{background:#fff0ef;color:#a63838;border:1px solid #f4d4d1}button.green{background:linear-gradient(135deg,#16806a,#0c9c91)}
+table{width:100%;border-collapse:separate;border-spacing:0;margin-top:14px}th,td{text-align:left;border-bottom:1px solid #e8eef0;padding:12px 9px;vertical-align:middle}th{background:#f0f7f8;font-size:12px;color:#345365;font-weight:800}th:first-child{border-radius:9px 0 0 9px}th:last-child{border-radius:0 9px 9px 0}tbody tr:hover{background:#fbfefe}td input,td select{padding:8px 9px;border-radius:8px}td.num,th.num{text-align:right;white-space:nowrap}.table-wrap{overflow-x:auto}
+.totals{max-width:390px;margin:18px 0 0 auto;padding:14px 17px;background:#f5f9fa;border:1px solid #e7eef0;border-radius:13px}.totalrow{display:flex;justify-content:space-between;gap:15px;padding:8px 0;border-bottom:1px solid #e0e9ed}.totalrow.final{font-size:20px;font-weight:850;color:var(--navy);border-bottom:0;padding-top:12px}.totalrow.final strong{color:#087e8b}
+.muted{color:var(--muted);font-size:13px}.hidden{display:none!important}.project-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
+.notice{background:#fff9e9;border:1px solid #f5e3b4;border-radius:12px;padding:13px 15px;margin-top:14px;font-size:13px;color:#745b24}
+.badge{display:inline-flex;align-items:center;gap:7px;background:#e4f7ee;color:#19724e;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:800}.badge:before{content:"";width:7px;height:7px;border-radius:50%;background:#26a269;box-shadow:0 0 0 3px #26a26920}
+footer{max-width:1180px;margin:0 auto;padding:0 18px 28px;color:#8a9aa3;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer strong{color:#47616e}
+@media(max-width:650px){header{padding-top:23px;padding-bottom:24px}.brand-row{align-items:flex-start;gap:11px}.brand-mark{width:45px;height:45px;flex-basis:45px;border-radius:14px}.owner-chip{display:none}header h1{font-size:23px}.workspace-intro{align-items:flex-start;flex-direction:column;gap:9px}.panel{padding:15px;border-radius:14px}th,td{padding:9px 6px}.field{min-width:130px}.tabs{gap:4px}.tab{flex:1;padding:10px 9px;font-size:13px}.totals{max-width:none}.project-head{align-items:flex-start}}
+@media print{body{background:white;font-size:12px}header,.tabs,.no-print,.notice,footer,.workspace-intro{display:none!important}main{max-width:none;margin:0;padding:0}.panel{border:0;box-shadow:none;padding:0;margin:0 0 10px}.print-only{display:block!important}input,select{border:0;padding:0;appearance:none;background:white}button{display:none!important}th{background:#eee!important}.totals{background:white;border:1px solid #ddd}#materialsPanel,#projectsPanel{display:none!important}#quotePanel{display:block!important}}
+</style></head>
+<body>
+<header><div class="brand-row"><div class="brand-mark">MM</div><div class="brand-copy"><div class="eyebrow">Milan Meeuwens · Werkruimte</div><h1>Sanitair & Offertes</h1><p>Van materiaal tot offerte — alles overzichtelijk op één plek.</p></div><div class="owner-chip">✦ Persoonlijk dashboard</div></div></header>
+<main>
+<div class="workspace-intro"><div><h2>Welkom in jouw werkruimte 👋</h2><p>Beheer projecten, stel offertes samen en houd alles netjes bij.</p></div><span class="workspace-tag">● Jouw projecten, jouw overzicht</span></div>
+<div class="tabs no-print">
+<button class="tab active" data-tab="quotePanel">Offerte / project</button>
+<button class="tab" data-tab="materialsPanel">Materialen beheren</button>
+<button class="tab" data-tab="projectsPanel">Projecten beheren</button>
+</div>
+<section id="quotePanel" class="panel">
+<div class="project-head"><div><h2 id="quoteTitle">Offerte</h2><div class="muted">Projectgegevens en materialen voor de geselecteerde offerte.</div></div><span class="badge" id="saveStatus">Automatisch lokaal opgeslagen</span></div>
+<div class="row" style="margin-top:14px">
+<div class="field"><label for="projectSelect">Project kiezen</label><select id="projectSelect"></select></div>
+<div class="field"><label for="client">Klant / opdrachtgever</label><input id="client" placeholder="Naam klant"></div>
+<div class="field"><label for="quoteDate">Datum</label><input id="quoteDate" type="date"></div>
+</div>
+<div class="row" style="margin-top:10px"><div class="field"><label for="address">Adres / werf</label><input id="address" placeholder="Adres van de werf"></div><div class="field"><label for="reference">Offertenummer / referentie</label><input id="reference" placeholder="Bijv. OFF-2026-001"></div></div>
+<div class="row" style="margin-top:10px"><div class="field"><label for="notes">Opmerkingen</label><textarea id="notes" rows="2" placeholder="Extra informatie voor deze offerte"></textarea></div></div>
+<div class="actions no-print"><button id="addLine">+ Materiaalregel toevoegen</button><button class="secondary" id="newProjectQuick">+ Nieuw project</button><button class="green" id="printQuote">Afdrukken / opslaan als PDF</button></div>
+<div class="table-wrap"><table id="quoteTable"><thead><tr><th style="min-width:260px">Materiaal / onderdeel</th><th class="num">Aantal</th><th class="num">Eenheidsprijs (€)</th><th class="num">Totaal (€)</th><th class="no-print"> </th></tr></thead><tbody id="quoteRows"></tbody></table></div>
+<p class="muted" style="margin-top:14px;padding:10px 12px;background:#f0f7f8;border-left:3px solid #087e8b;border-radius:8px">Alle materiaalprijzen in deze offerte zijn afkomstig van Desco. Prijzen kunnen wijzigen en dienen bij bestelling gecontroleerd te worden.</p>
+<div class="totals">
+<div class="totalrow"><span>Subtotaal excl. btw</span><strong id="subtotal">€ 0,00</strong></div>
+<div class="totalrow"><span>Btw (21%)</span><strong id="vat">€ 0,00</strong></div>
+<div class="totalrow final"><span>Totaal incl. btw</span><strong id="grandTotal">€ 0,00</strong></div>
+</div>
+<p class="muted">Tip: gebruik in het afdrukvenster de optie “Opslaan als PDF” om de offerte als PDF te bewaren.</p>
+</section>
+<section id="materialsPanel" class="panel hidden">
+<h2>Materialen beheren</h2><p class="muted">Voeg nieuwe onderdelen toe. Ze verschijnen daarna automatisch in de keuzelijst bij de offerte.</p>
+<div class="row">
+<div class="field"><label for="newMaterialName">Naam materiaal / onderdeel</label><input id="newMaterialName" placeholder="Bijv. koppeling 3/4 inch"></div>
+<div class="field small"><label for="newMaterialPrice">Eenheidsprijs (€)</label><input id="newMaterialPrice" type="number" min="0" step="0.01" placeholder="0,00"></div>
+<div><button id="addMaterial">Materiaal toevoegen</button></div>
+</div>
+<div class="table-wrap"><table><thead><tr><th>Materiaal / onderdeel</th><th class="num">Eenheidsprijs (€)</th><th class="no-print">Actie</th></tr></thead><tbody id="materialsRows"></tbody></table></div>
+</section>
+<section id="projectsPanel" class="panel hidden">
+<h2>Projecten beheren</h2><p class="muted">Elk project heeft een eigen offerte en eigen materiaalregels. Je kunt meerdere projecten naast elkaar bewaren.</p>
+<div class="row">
+<div class="field"><label for="newProjectName">Naam nieuw project</label><input id="newProjectName" placeholder="Bijv. Badkamer familie Peeters"></div>
+<div><button id="createProject">Project aanmaken</button></div>
+</div>
+<div class="table-wrap"><table><thead><tr><th>Project</th><th>Klant</th><th class="num">Totaal incl. btw</th><th class="no-print">Acties</th></tr></thead><tbody id="projectsRows"></tbody></table></div>
+<div class="actions no-print"><button class="secondary" id="exportData">Back-up downloaden</button><label class="secondary" style="display:inline-flex;align-items:center;gap:8px;border-radius:7px;padding:10px 14px;cursor:pointer">Back-up terugzetten <input id="importData" type="file" accept=".json,application/json" style="max-width:190px;padding:0;border:0"></label></div>
+<div class="notice">Je gegevens worden bewaard in deze browser op dit apparaat. Download regelmatig een back-up. Als je de browsergegevens wist of een andere computer gebruikt, heb je de back-up nodig.</div>
+</section>
+</main>
+<footer><span>Ontworpen voor <strong>Milan Meeuwens</strong> · Sanitair & projecten</span><span>Met zorg gemaakt <strong>✦</strong></span></footer>
+<script>
+const defaultMaterials = [{"name": "manometer 1/2''", "price": 28.0}, {"name": "terugslagklep 6/4''", "price": 47.46}, {"name": "t-stuk 1/2''", "price": 2.76}, {"name": "pompkoppeling 6/4''", "price": 24.95}, {"name": "ontluchter 1/2''", "price": 16.63}, {"name": "expansievat 25l", "price": 72.88}, {"name": "radiatorkraan 1/2''", "price": 18.69}, {"name": "retour kraan", "price": 11.11}, {"name": "bocht 1/2''", "price": 1.89}, {"name": "veiligheidsventiel", "price": 37.29}, {"name": "aflaatkraan 1/2''", "price": 10.41}, {"name": "pomp circulatie", "price": 105.6}, {"name": "radiator type 21", "price": 176.99}, {"name": "vulset 1/2''", "price": 44.36}, {"name": "reductie 1'' naar 1/2''", "price": 3.03}, {"name": "driedelingekoppeling 1''", "price": 13.28}, {"name": "rooie buis 1''", "price": 57.8}, {"name": "rooie buis 1/2''", "price": 55.44}, {"name": "3 driedelingekoppelingen 3/4''", "price": 12.03}, {"name": "bocht 1''", "price": 4.72}, {"name": "nippel 1''", "price": 3.79}, {"name": "t-stuk 1''", "price": 6.77}, {"name": "bocht 45° 1/2", "price": 2.45}, {"name": "nippel 1/2''", "price": 2.05}, {"name": "Gegalvaniseerde ezelrug 1/2″", "price": 4.21}, {"name": "SCHUIFAFSLUITKRAAN 1/2″", "price": 14.47}, {"name": "RECHTE KOPP MF 1/2″", "price": 10.03}, {"name": "BOILER INOX COMFORT ACV 100L KLASSE C", "price": 797.44}, {"name": "OPHANGBEUGEL VOOR COMFORT BOILER ACV", "price": 35.0}, {"name": "VUILAFSCHEIDER MET EXTERNE MAGNEET 5/4″", "price": 288.0}, {"name": "3-WEGMENGKRAAN 4/4″ ESBE", "price": 111.54}, {"name": "bocht mv 1''", "price": 5.97}, {"name": "reductie 1'' 3/4''", "price": 2.73}, {"name": "t-stuk 3/4''", "price": 4.67}, {"name": "reductie 3/4'' 1/2''", "price": 2.05}, {"name": "t-stuk 1'' 3/4'' 1''", "price": 7.2}, {"name": "rooie buis 3/4''", "price": 7.86}, {"name": "MAZOUTKETEL BASIC+ B", "price": 4335.53}];
+const $ = id => document.getElementById(id);
+const money = n => new Intl.NumberFormat('nl-BE',{style:'currency',currency:'EUR'}).format(Number(n)||0);
+const today = new Date().toISOString().slice(0,10);
+let data;
+function fresh(){return {materials:defaultMaterials.map((m,i)=>({...m,id:'m'+i})),projects:[{id:uid(),name:'Nieuw project',client:'',address:'',reference:'',date:today,notes:'',lines:[]}],activeProject:null};}
+function uid(){return 'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function load(){try{let d=JSON.parse(localStorage.getItem('sanitairQuoteApp'));if(d&&Array.isArray(d.materials)&&Array.isArray(d.projects)){data=d; if(!data.projects.length)data.projects.push({id:uid(),name:'Nieuw project',client:'',address:'',reference:'',date:today,notes:'',lines:[]});}else data=fresh()}catch(e){data=fresh()}if(!data.activeProject||!data.projects.some(p=>p.id===data.activeProject))data.activeProject=data.projects[0].id;save();}
+function save(){localStorage.setItem('sanitairQuoteApp',JSON.stringify(data));$('saveStatus').textContent='Opgeslagen';}
+function project(){return data.projects.find(p=>p.id===data.activeProject)}
+function totals(p){let sub=(p.lines||[]).reduce((s,l)=>s+(Number(l.qty)||0)*(Number(l.price)||0),0);return {sub,vat:sub*.21,total:sub*1.21}}
+function switchTab(id){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));['quotePanel','materialsPanel','projectsPanel'].forEach(x=>$(x).classList.toggle('hidden',x!==id));if(id==='materialsPanel')renderMaterials();if(id==='projectsPanel')renderProjects();}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
+function renderProjectSelect(){let s=$('projectSelect');s.innerHTML='';data.projects.forEach(p=>{let o=document.createElement('option');o.value=p.id;o.textContent=p.name;s.appendChild(o)});s.value=data.activeProject;}
+function fillProject(){let p=project();if(!p)return;$('quoteTitle').textContent=p.name;$('client').value=p.client||'';$('address').value=p.address||'';$('reference').value=p.reference||'';$('quoteDate').value=p.date||today;$('notes').value=p.notes||'';renderProjectSelect();renderLines();}
+function renderLines(){let p=project(),body=$('quoteRows');body.innerHTML='';p.lines.forEach((l,i)=>{let tr=document.createElement('tr');
+let td1=document.createElement('td'),sel=document.createElement('select');sel.innerHTML='<option value="">— Kies materiaal —</option>'+data.materials.map(m=>`<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('');sel.value=l.materialId||'';sel.addEventListener('change',()=>{l.materialId=sel.value;let m=data.materials.find(x=>x.id===sel.value);if(m)l.price=Number(m.price)||0;save();renderLines()});td1.appendChild(sel);
+let td2=document.createElement('td');td2.className='num';let qty=document.createElement('input');qty.type='number';qty.min='0';qty.step='any';qty.value=l.qty??1;qty.style.width='82px';qty.addEventListener('input',()=>{l.qty=Number(qty.value)||0;save();updateTotals()});td2.appendChild(qty);
+let td3=document.createElement('td');td3.className='num';let price=document.createElement('input');price.type='number';price.min='0';price.step='0.01';price.value=Number(l.price)||0;price.style.width='115px';price.addEventListener('input',()=>{l.price=Number(price.value)||0;save();updateTotals()});td3.appendChild(price);
+let td4=document.createElement('td');td4.className='num';td4.textContent=money((Number(l.qty)||0)*(Number(l.price)||0));
+let td5=document.createElement('td');td5.className='no-print';let del=document.createElement('button');del.textContent='Verwijder';del.className='danger';del.addEventListener('click',()=>{p.lines.splice(i,1);save();renderLines()});td5.appendChild(del);
+tr.append(td1,td2,td3,td4,td5);body.appendChild(tr)});updateTotals();}
+function updateTotals(){let t=totals(project());$('subtotal').textContent=money(t.sub);$('vat').textContent=money(t.vat);$('grandTotal').textContent=money(t.total);renderProjectSelect();}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+$('projectSelect').addEventListener('change',()=>{data.activeProject=$('projectSelect').value;save();fillProject()});
+[['client','client'],['address','address'],['reference','reference'],['quoteDate','date'],['notes','notes']].forEach(([id,key])=>$(id).addEventListener('input',()=>{project()[key]=$(id).value;save();if(key==='client')renderProjects();}));
+$('addLine').addEventListener('click',()=>{project().lines.push({materialId:'',qty:1,price:0});save();renderLines()});
+function createProject(name){name=(name||'').trim();if(!name){name='Nieuw project '+(data.projects.length+1)}let p={id:uid(),name,client:'',address:'',reference:'',date:today,notes:'',lines:[]};data.projects.push(p);data.activeProject=p.id;save();fillProject();renderProjects();switchTab('quotePanel')}
+$('newProjectQuick').addEventListener('click',()=>{let n=prompt('Naam van het nieuwe project:');if(n!==null)createProject(n)});
+$('createProject').addEventListener('click',()=>{createProject($('newProjectName').value);$('newProjectName').value=''});
+$('newProjectName').addEventListener('keydown',e=>{if(e.key==='Enter')$('createProject').click()});
+$('printQuote').addEventListener('click',()=>window.print());
+function renderMaterials(){let b=$('materialsRows');b.innerHTML='';data.materials.forEach((m,i)=>{let tr=document.createElement('tr'),a=document.createElement('td'),n=document.createElement('input');n.value=m.name;n.addEventListener('change',()=>{m.name=n.value.trim()||m.name;save();renderLines();renderMaterials()});a.appendChild(n);let c=document.createElement('td');c.className='num';let price=document.createElement('input');price.type='number';price.min='0';price.step='.01';price.value=m.price;price.style.maxWidth='140px';price.addEventListener('change',()=>{m.price=Number(price.value)||0;save();renderLines();renderMaterials()});c.appendChild(price);let d=document.createElement('td');d.className='no-print';let btn=document.createElement('button');btn.textContent='Verwijder';btn.className='danger';btn.addEventListener('click',()=>{if(confirm('Materiaal verwijderen uit de materiaallijst? Bestaande offerteprijzen blijven staan.')){data.materials.splice(i,1);save();renderMaterials();renderLines()}});d.appendChild(btn);tr.append(a,c,d);b.appendChild(tr)})}
+$('addMaterial').addEventListener('click',()=>{let name=$('newMaterialName').value.trim(),price=$('newMaterialPrice').value;if(!name){alert('Vul eerst de naam van het materiaal in.');return}data.materials.push({id:uid(),name,price:Number(price)||0});$('newMaterialName').value='';$('newMaterialPrice').value='';save();renderMaterials();renderLines()});
+function renderProjects(){let b=$('projectsRows');b.innerHTML='';data.projects.forEach(p=>{let tr=document.createElement('tr'),a=document.createElement('td');a.textContent=p.name;let c=document.createElement('td');c.textContent=p.client||'—';let t=document.createElement('td');t.className='num';t.textContent=money(totals(p).total);let d=document.createElement('td');d.className='no-print';let open=document.createElement('button');open.textContent='Openen';open.addEventListener('click',()=>{data.activeProject=p.id;save();fillProject();switchTab('quotePanel')});let rename=document.createElement('button');rename.textContent='Hernoem';rename.className='secondary';rename.style.marginLeft='5px';rename.addEventListener('click',()=>{let n=prompt('Nieuwe projectnaam:',p.name);if(n&&n.trim()){p.name=n.trim();save();renderProjects();renderProjectSelect();if(p.id===data.activeProject)$('quoteTitle').textContent=p.name}});let del=document.createElement('button');del.textContent='Verwijder';del.className='danger';del.style.marginLeft='5px';del.addEventListener('click',()=>{if(data.projects.length===1){alert('Je moet minstens één project bewaren.');return}if(confirm('Project en bijhorende offerte verwijderen?')){data.projects=data.projects.filter(x=>x.id!==p.id);if(data.activeProject===p.id)data.activeProject=data.projects[0].id;save();fillProject();renderProjects()}});d.append(open,rename,del);tr.append(a,c,t,d);b.appendChild(tr)})}
+$('exportData').addEventListener('click',()=>{let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sanitair-projecten-backup.json';a.click();URL.revokeObjectURL(a.href)});
+$('importData').addEventListener('change',async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!Array.isArray(d.materials)||!Array.isArray(d.projects))throw Error();if(confirm('De huidige projecten en materialen vervangen door de back-up?')){data=d;if(!data.projects.length)data.projects.push({id:uid(),name:'Nieuw project',date:today,lines:[]});data.activeProject=data.projects[0].id;save();fillProject();renderMaterials();renderProjects();alert('Back-up teruggezet.')}}catch(err){alert('Dit lijkt geen geldige back-up te zijn.')}e.target.value=''});
+load();fillProject();
+</script></body></html>
